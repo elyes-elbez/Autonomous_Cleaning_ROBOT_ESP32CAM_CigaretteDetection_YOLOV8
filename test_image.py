@@ -4,10 +4,10 @@ from ultralytics import YOLO
 import cv2
 
 # 1️⃣ Load the trained YOLOv8 model
-model = YOLO("best 092_0.61.pt")  # path to your best.pt
+model = YOLO("cigarette_detection.pt")  # path to your best.pt
 
 # 2️⃣ Load an image
-image_path = "screenshots/screenshot_9.jpg"
+image_path = "test.jpg"
 image = cv2.imread(image_path)
 
 # 3️⃣ Run prediction
